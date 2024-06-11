@@ -54,8 +54,15 @@
     </script>
 </body>
 </html> -->
+<?php
+session_start();
 
-
+// Check if the user is logged in
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php"); // Redirect to login page if not logged in
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +102,7 @@
         function onConnect() {
             console.log("Connected to MQTT broker.");
             // Subscribe to a topic
-            client.subscribe("/zajogamba/switch");
+            client.subscribe("/zajogamba/user");
 
         }
 
@@ -118,7 +125,7 @@
         // Function to send message
         function sendMessage() {
             var message = document.getElementById("inputMessage").value;
-            var topic = "/zajogamba/switchs";
+            var topic = "/zajogamba/switch";
             var mqttMessage = new Paho.MQTT.Message(message);
             mqttMessage.destinationName = topic;
             client.send(mqttMessage);
@@ -131,5 +138,9 @@
             messagesDiv.scrollTop = messagesDiv.scrollHeight;  // Scroll to the bottom
         }
     </script>
+
+    <form action="script/logout.php">
+        <button type="submit">logout</button>
+    </form>
 </body>
 </html>

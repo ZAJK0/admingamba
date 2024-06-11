@@ -1,11 +1,63 @@
-body {
+body{
     background-color: #151515;
     color: #ded7d7;
+    height: 100vh;
+}
+
+.loginBody {
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
     margin: 0; 
+}
+
+
+.nav{
+    width: 100%;
+    background-color: #A91D3A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navLogo{
+    max-width: 4rem;
+}
+
+.signout{
+    background-color: #A91D3A;
+    color: white;
+    border: 0;
+}
+
+
+.pokladnaCard{
+    background-color: #C73659;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    width: 263px;
+    text-align: center;
+
+}
+
+.waitSec{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    background-color: rgba(169, 29, 58,0.15);
+    width: 860px;
+    height: 457px;
+    border: 1px solid #A91D3A;
+    border-radius: 24;
+    box-shadow: 0 4px 20px #A91D3A ;
 }
 
 .loginSec {
@@ -53,6 +105,7 @@ body {
 .loginForm .form-control {
     display: flex;
     justify-self: center;
+    font-size: 40px;
     margin-bottom: 10px;
     width: 953px;
     max-width: 100%;
