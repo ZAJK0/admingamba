@@ -13,7 +13,6 @@ require 'config.php';
             $email = $_POST['email'];
             $password = $_POST['password'];
             // Prepare and execute a query to check the user's credentials
-            echo($email);
             $sql = "SELECT * FROM `admin` WHERE email = :email AND heslo = :heslo";
             echo($password);
             $stmt = $DB->prepare($sql);
@@ -21,7 +20,6 @@ require 'config.php';
             $stmt->bindParam(':heslo', $password);
             $stmt->execute();
             $user = $stmt->fetch(PDO::FETCH_ASSOC);
-            echo($user['heslo']);
             $hashed_password = $user['heslo'];
                 
             // if ($user) {
@@ -71,7 +69,7 @@ require 'config.php';
         <img src="img/logo.png" class="loginLogo" alt="">
         <!-- </div> -->
         <form class="loginForm" method="post">
-            <p><?=$error?></p>
+            <!-- <p><?=$error?></p> -->
             <div class="mb-3 loginInput">
                 <label for="email" class="form-label">Email</label>
                 <input name="email" type="email" class="form-control" id="email" required>

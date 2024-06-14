@@ -1,7 +1,7 @@
 body{
     background-color: #151515;
     color: #ded7d7;
-    height: 100vh;
+    height: 90vh;
 }
 
 .loginBody {
@@ -15,25 +15,41 @@ body{
 
 .nav{
     width: 100%;
+    height: 80px;
     background-color: #A91D3A;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navLogo{
-    max-width: 4rem;
+    margin-left: 4rem;
+    width: 55px;
+}
+.navNazov{
+    font-family: "Lacquer", system-ui;
+    font-size: 42px;
 }
 
 .signout{
     background-color: #A91D3A;
     color: white;
     border: 0;
+    font-size: 20px;
+    margin-right: 4rem;
 }
 
 
+.pokladne{
+    width: 80%;
+    max-width: 95%;
+    
+}
+
 .pokladnaCard{
     background-color: #C73659;
+    box-shadow: 0 1px 10px #A91D3A !important;
     display: flex;
     flex-direction: column;
     color: white;
@@ -41,6 +57,7 @@ body{
     font-size: 30px;
     width: 263px;
     text-align: center;
+    border-radius: 20px;
 
 }
 
@@ -53,11 +70,124 @@ body{
 
 .section{
     background-color: rgba(169, 29, 58,0.15);
+    border: 1px solid #A91D3A;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px #A91D3A ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionWait{
     width: 860px;
     height: 457px;
-    border: 1px solid #A91D3A;
-    border-radius: 24;
-    box-shadow: 0 4px 20px #A91D3A ;
+    font-size: 40px;
+    
+}
+
+.sectionPoints{
+    width: 860px;
+    height: 457px;
+}
+
+.namePoint{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.buttonsPoint{
+    width: 228px !important;
+}
+
+
+.buttonPointRed{
+    background-color: rgba(199, 54, 89,0.2);
+    border: 1px solid #C73659;
+    border-radius: 16px;
+    width: 60px;
+    height: 60px;
+}
+
+.buttonPointRed:hover{
+    scale: 1.1;
+    transition: 200ms;
+}
+
+.buttonPointRed:active{
+    background-color: #b83151;
+}
+
+.buttonPointWhite{
+    background-color: rgba(255, 255, 255,0.2);
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    width: 60px;
+    height: 60px;
+
+}
+
+.buttonPointWhite:hover{
+    scale: 1.1;
+    transition: 200ms;
+}
+
+.buttonPointWhite:active{
+    background-color: #EEEEEE;
+
+}
+
+.inputPoint{
+    width: 315px;
+    height: 60px;
+    background-color: #EEEEEE;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0,0.5);
+    margin-top: 0.5rem;
+    font-size: 25px;
+}
+
+.contentPoint{
+    width: 740px;
+}
+
+.createSec{
+    width: 600px;
+    height: 557px;
+}
+
+.createHead{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.inputCreate{
+    width: 360px;
+    height: 60px;
+    background-color: #EEEEEE;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0,0.5);
+    margin-top: 1.5rem;
+    font-size: 25px;
+
+}
+
+.createButton{
+    width: 240px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #C73659;
+    border: 0;
+    color: #EEEEEE;
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
+.createButton:hover{
+    scale: 1.05;
+    transition: 200ms;
+    background-color: #b83151;
 }
 
 .loginSec {

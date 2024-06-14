@@ -108,6 +108,7 @@ if (!isset($_SESSION['user_id'])) {
 
         // Called when a message arrives
         function onMessageArrived(message) {
+            alert("dsn")
             var messagesDiv = document.getElementById("messages");
             var newMessage = document.createElement("div");
             newMessage.textContent = "Received: " + message.payloadString;

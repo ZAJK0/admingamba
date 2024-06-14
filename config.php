@@ -1,10 +1,10 @@
 <?php
 
 define('DB_CONNECTION', 'mysql');
-define('DB_HOST', 'localhost');     
-define('DB_DATABASE', 'gamba');
-define('DB_USERNAME', 'root');     
-define('DB_PASSWORD', '');          
+define('DB_HOST', 'us.vybrat.eu');     
+define('DB_DATABASE', '3ATVojar_pavian');
+define('DB_USERNAME', '3ATVojar_pavian');     
+define('DB_PASSWORD', 'Jcauq55Ua0');          
 define('DB_CHARSET', 'utf8');
 
 try {

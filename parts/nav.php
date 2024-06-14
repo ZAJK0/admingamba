@@ -1,7 +1,7 @@
 <nav class="nav">
-        <div>
+        <div class="d-flex flex-row align-items-center">
             <img src="img/logo.png" class="navLogo" alt="">
-            <span>MEGAWIN</span>
+            <span class="navNazov">2Chance</span>
         </div> 
         <form class="" action="script/logout.php">
             <button class="signout" type="submit">Odhlasit sa</button>
